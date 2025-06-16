@@ -10,11 +10,16 @@ function loadTodo() {
     loadTodoList()
     displayTodoList();
 }
+$(document).ready(function (){
+    $(".card").show(500);
+    $(document).ready(taskTextBox.focus());
+});
 
 function addTodo() {
     pushTodo();
     displayTodoList();
     saveTodo()
+    $(".card").show(250);
 }
 
 function pushTodo() {
@@ -62,6 +67,7 @@ function deleteMe(index) {
     const confirmed = confirm("Are you sure you want to delete this task?");
     if(confirmed){
         confirmDelete(index);
+        $(".card").show(250);
     }
 }
 
@@ -85,4 +91,6 @@ function loadTodoList() {
 function isValidTextBox(todo) {
     return (todo.task !== "" && todo.time.toString().trim() !== "");
 }
+
+
 

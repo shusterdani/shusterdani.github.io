@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do List</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script defer src="js/todo_main.js"></script>
     <link rel="stylesheet" href="css/todo_style.css">
-    <link rel="icon" href="/images/favicon.ico">
+    <link rel="icon" href="images/Todo.ico">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
         </style>
@@ -26,10 +27,12 @@
                     <br>
                     <textarea id="taskTextBox"></textarea>
                 </div>
+                <br>
                 <div class="inputBoxes">
                     <label for="timeTextBox">Enter Time & Date</label>
                     <input type="datetime-local" id="timeTextBox">
                 </div>
+                <br>
 
                 <div id="buttons">
                     <button class="btn">Add</button>
